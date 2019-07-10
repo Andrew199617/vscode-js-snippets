@@ -1,6 +1,6 @@
 {
   "Create_Class_Object_Literal": {
-      "prefix": "ccs",
+      "prefix": "cc_lgd",
       "scope": "javascript",
       "body": [
         "/**",
@@ -21,7 +21,7 @@
       "description": "Create class"
   },
   "Create_Class_Object_Literal_Export": {
-      "prefix": "ccse",
+      "prefix": "cce_lgd",
       "scope": "javascript",
       "body": [
         "/**",
@@ -44,7 +44,7 @@
       "description": "Create class with export"
   },
   "Create_Enum": {
-      "prefix": "ces",
+      "prefix": "ce_lgd",
       "scope": "javascript",
       "body": [
         "/**",
