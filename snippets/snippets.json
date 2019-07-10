@@ -1,0 +1,61 @@
+{
+  "Create_Class_Object_Literal": {
+      "prefix": "ccs",
+      "scope": "javascript",
+      "body": [
+        "/**",
+        "* @description",
+        "* @type {${TM_FILENAME_BASE}}",
+        "*/",
+       "const ${TM_FILENAME_BASE} = {",
+          "\t/**",
+          "\t* @description",
+          "\t* @returns {${TM_FILENAME_BASE}}",
+          "\t*/",
+          "\tcreate() {",
+            "\t\tconst ${TM_FILENAME_BASE/(\\w)/${1:/downcase}/} = Object.assign({}, ${TM_FILENAME_BASE});",
+            "\t\treturn ${TM_FILENAME_BASE/(\\w)/${1:/downcase}/}",
+          "\t}",
+        "};"
+      ],
+      "description": "Create class"
+  },
+  "Create_Class_Object_Literal_Export": {
+      "prefix": "ccse",
+      "scope": "javascript",
+      "body": [
+        "/**",
+        "* @description",
+        "* @type {${TM_FILENAME_BASE}}",
+        "*/",
+       "const ${TM_FILENAME_BASE} = {",
+          "\t/**",
+          "\t* @description",
+          "\t* @returns {${TM_FILENAME_BASE}}",
+          "\t*/",
+          "\tcreate() {",
+            "\t\tconst ${TM_FILENAME_BASE/(\\w)/${1:/downcase}/} = Object.assign({}, ${TM_FILENAME_BASE});",
+            "\t\treturn ${TM_FILENAME_BASE/(\\w)/${1:/downcase}/}",
+          "\t}",
+        "};",
+        "",
+        "export default ${TM_FILENAME_BASE};"
+      ],
+      "description": "Create class with export"
+  },
+  "Create_Enum": {
+      "prefix": "ces",
+      "scope": "javascript",
+      "body": [
+        "/**",
+        "* @description ",
+        "* @type {${1:Name}}",
+        "*/",
+       "const ${1:Name} = {",
+        "\t/** @description */",
+        "\t${2:VALUE}: 0",
+        "};"
+      ],
+      "description": "Create Enum"
+  }
+}

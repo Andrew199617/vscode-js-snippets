@@ -1,0 +1,37 @@
+{
+    "name": "js-snippet-extension",
+    "displayName": "JS/React Snippet Extension",
+    "publisher": "learn-game-development",
+    "icon": "LGDLogo.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Andrew199617/vscode-js-snippets"
+    },
+    "description": "Extra Snippets for JS files. Support React + Next.js.",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.1.0"
+    },
+    "keywords": [
+        "js-snippets",
+        "js", "javascript",
+        "Learn Game Development", "LGD",
+        "react", "next"
+    ],
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+          {
+            "language": "javascript",
+            "path": "./snippets/snippets.json"
+          }
+        ]
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+        "vscode": "^1.1.0"
+    }
+}
