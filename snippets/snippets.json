@@ -14,7 +14,7 @@
           "\t*/",
           "\tcreate() {",
             "\t\tconst ${TM_FILENAME_BASE/(\\w)/${1:/downcase}/} = Object.assign({}, ${TM_FILENAME_BASE});",
-            "\t\treturn ${TM_FILENAME_BASE/(\\w)/${1:/downcase}/}",
+            "\t\treturn ${TM_FILENAME_BASE/(\\w)/${1:/downcase}/};",
           "\t}",
         "};"
       ],
@@ -35,7 +35,7 @@
           "\t*/",
           "\tcreate() {",
             "\t\tconst ${TM_FILENAME_BASE/(\\w)/${1:/downcase}/} = Object.assign({}, ${TM_FILENAME_BASE});",
-            "\t\treturn ${TM_FILENAME_BASE/(\\w)/${1:/downcase}/}",
+            "\t\treturn ${TM_FILENAME_BASE/(\\w)/${1:/downcase}/};",
           "\t}",
         "};",
         "",
