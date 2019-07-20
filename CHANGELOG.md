@@ -2,7 +2,12 @@
 
 All notable changes to the "js-snippet-extension" extension will be documented in this file.
 
-#1.0.3 
+## 1.0.4 - 1.0.5
+
+- Create Error Class.
+- Update to match the JS Syntax Highlight Extension.
+
+## 1.0.3 
 
 - Added React Class,
 - Added Next Class
