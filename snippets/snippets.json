@@ -49,12 +49,29 @@
       "body": [
         "/**",
         "* @description ",
-        "* @type {${1:Name}}",
+        "* @type {${TM_FILENAME_BASE}Type}",
         "*/",
-       "const ${1:Name} = {",
+       "const ${TM_FILENAME_BASE} = {",
         "\t/** @description */",
-        "\t${2:VALUE}: 0",
+        "\t${1:VALUE}: 0",
         "};"
+      ],
+      "description": "Create Enum"
+  },
+  "Create_Enum_Export": {
+      "prefix": "cee_lgd",
+      "scope": "javascript",
+      "body": [
+        "/**",
+        "* @description ",
+        "* @type {${TM_FILENAME_BASE}Type}",
+        "*/",
+       "const ${TM_FILENAME_BASE} = {",
+        "\t/** @description */",
+        "\t${1:VALUE}: 0",
+        "};",
+        "",
+        "export default ${TM_FILENAME_BASE};"
       ],
       "description": "Create Enum"
   },
@@ -150,11 +167,11 @@
         "\t*/",
         "\tcreate(${1:status}) {",
           "\t\tconst ${TM_FILENAME_BASE/(\\w)/${1:/downcase}/} = Object.assign({}, ${TM_FILENAME_BASE});",
-          "\t\tunexpectedResponseError.name = '${TM_FILENAME_BASE};'",
-          "\t\tunexpectedResponseError.message = message + ${1:status};",
+          "\t\t${TM_FILENAME_BASE/(\\w)/${1:/downcase}/}.name = '${TM_FILENAME_BASE}'",
+          "\t\t${TM_FILENAME_BASE/(\\w)/${1:/downcase}/}.message = message + ${1:status};",
           "",
-          "\t\tError.call(unexpectedResponseError);",
-          "\t\tError.captureStackTrace(unexpectedResponseError, {message, ${1:status}});",
+          "\t\tError.call(${TM_FILENAME_BASE/(\\w)/${1:/downcase}/});",
+          "\t\tError.captureStackTrace(${TM_FILENAME_BASE/(\\w)/${1:/downcase}/}, {message, ${1:status}});",
           "",
           "\t\treturn ${TM_FILENAME_BASE/(\\w)/${1:/downcase}/};",
         "\t}",
