@@ -73,7 +73,7 @@
         "",
         "export default ${TM_FILENAME_BASE};"
       ],
-      "description": "Create Enum"
+      "description": "Create Enum with export"
   },
   "Create_React_Class": {
       "prefix": "crc_lgd",
