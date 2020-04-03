@@ -8,7 +8,7 @@
         "url": "https://github.com/Andrew199617/vscode-js-snippets"
     },
     "description": "Extra Snippets for JS files. Support React + Next.js.",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "engines": {
         "vscode": "^1.1.0"
     },
