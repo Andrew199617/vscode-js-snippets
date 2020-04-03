@@ -2,16 +2,24 @@
 
 # Features
 
-Create classes the way we like to make them. These classes will integrate with our other tools.
+Create classes using Oloo pattern and React Classes. These classes will integrate with our other tools. 
 
 ### Other Extensions:
 - JS Syntax Highlight Extension.
+
+### Modules
+- @learngamedevelopment/oloo
 
 ### Snippets
 
 ![Snippets](./images/createclass.gif)
 
 ## Release Notes
+
+## 1.0.6 - 1.0.7
+
+- Changed Object.assign({} , Class) to Object.create(Class)
+- Improved Enum and Error Class.
 
 ## 1.0.4 - 1.0.5
 
