@@ -184,7 +184,7 @@
         "\t}",
       "};",
       "",
-      "export default ${TM_FILENAME_BASE};"
+      "module.exports = ${TM_FILENAME_BASE};"
     ],
     "description": "Create Error"
   }
