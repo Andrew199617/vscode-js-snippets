@@ -180,7 +180,7 @@
         "\t* @returns {string}",
         "\t*/",
         "\ttoString() {",
-        "\t\treturn `${TM_FILENAME_BASE}: ${this.message}`",
+        "\t\treturn `${TM_FILENAME_BASE}: ${this.message}`;",
         "\t}",
       "};",
       "",
