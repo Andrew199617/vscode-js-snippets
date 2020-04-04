@@ -16,8 +16,9 @@ Create classes using Oloo pattern and React Classes. These classes will integrat
 
 ## Release Notes
 
-## 1.0.6 - 1.0.7
+## 1.0.6 - 1.0.9
 
+- Fixed up Error snippet.
 - Changed Object.assign({} , Class) to Object.create(Class)
 - Improved Enum and Error Class.
 
