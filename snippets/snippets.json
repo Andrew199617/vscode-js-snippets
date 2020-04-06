@@ -187,5 +187,37 @@
       "module.exports = ${TM_FILENAME_BASE};"
     ],
     "description": "Create Error"
+  },
+  "Create_Functional_Component": {
+    "prefix": "funcCom_lgd",
+    "scope": "javascript",
+    "description": "Create a Functional React Component",
+    "body": [
+      "import React from 'react';",
+      "import Proptypes from 'prop-types';",
+      "",
+      "/**",
+      "* @description ",
+      "* @param {{}} props The props passed in by Parent.",
+      "*/",
+      "function ${TM_FILENAME_BASE}(props) {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      "",
+      "${TM_FILENAME_BASE}.defaultProps = {",
+      "",
+      "};",
+      "",
+      "${TM_FILENAME_BASE}.propTypes = {",
+      "",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ]
+
   }
 }

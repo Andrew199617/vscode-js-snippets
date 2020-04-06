@@ -10,13 +10,24 @@ Create classes using Oloo pattern and React Classes. These classes will integrat
 ### Modules
 - @learngamedevelopment/oloo
 
-### Snippets
+# Snippets
 
-![Snippets](./images/createclass.gif)
+## Functional Components
+
+<img src="./images/functionalComponent.png" width='40%' />
+
+## Oloo (Object Linked To Other Objects)
+
+<img src="./images/createclass.gif" width='50%' />
 
 ## Release Notes
 
-## 1.0.6 - 1.0.9
+# 1.1.0 - 1.1.1
+
+- Introduced Oloo to some of the snippets. Breaking change for people without the module @learngamedevelopment/oloo
+- Added React Function Component.
+
+## 1.0.6 - 1.1.0
 
 - Fixed up Error snippet.
 - Changed Object.assign({} , Class) to Object.create(Class)
