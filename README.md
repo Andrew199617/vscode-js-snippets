@@ -5,10 +5,13 @@
 Create classes using Oloo pattern and React Classes. These classes will integrate with our other tools. 
 
 ### Other Extensions:
-- JS Syntax Highlight Extension.
+- JavaScript to Typescript Converter & Syntax Highlighter
+   - learn-game-development.js-syntax-extension
+   - If you want to have AutoComplete/Intellisense for the objects created use this extension.
 
 ### Modules
-- @learngamedevelopment/oloo
+- @mavega/oloo
+- @mavega/react
 
 # Snippets
 
@@ -22,8 +25,12 @@ Create classes using Oloo pattern and React Classes. These classes will integrat
 
 ## Release Notes
 
-# 1.1.0 - 1.1.1
+# 1.1.0+
 
+- Changed snippets to cType_lgd for better readability.
+   - cc_lgd -> cObject_lgd to know were creating an Object.
+   - crc_lgd -> cReactClass_lgd to know were creating a React Class.
+- Added createReact snippets. This will allow you to create a React Component using an Object.
 - Introduced Oloo to some of the snippets. Breaking change for people without the module @learngamedevelopment/oloo
 - Added React Function Component.
 

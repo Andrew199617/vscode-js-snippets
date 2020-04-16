@@ -1,6 +1,6 @@
 {
   "Create_Class_Object_Literal": {
-      "prefix": "cc_lgd",
+      "prefix": "cObject_lgd",
       "scope": "javascript",
       "body": [
         "/**",
@@ -21,7 +21,7 @@
       "description": "Create class"
   },
   "Create_Class_Object_Literal_Export": {
-      "prefix": "cce_lgd",
+      "prefix": "cObjectExp_lgd",
       "scope": "javascript",
       "body": [
         "/**",
@@ -44,12 +44,13 @@
       "description": "Create class with export"
   },
   "Create_Enum": {
-      "prefix": "ce_lgd",
+      "prefix": "cEnum_lgd",
       "scope": "javascript",
       "body": [
         "/**",
         "* @description ",
         "* @type {${TM_FILENAME_BASE}Type}",
+        "* @enum",
         "*/",
        "const ${TM_FILENAME_BASE} = {",
         "\t/** @description */",
@@ -59,12 +60,13 @@
       "description": "Create Enum"
   },
   "Create_Enum_Export": {
-      "prefix": "cee_lgd",
+      "prefix": "cEnumExp_lgd",
       "scope": "javascript",
       "body": [
         "/**",
         "* @description ",
         "* @type {${TM_FILENAME_BASE}Type}",
+        "* @enum",
         "*/",
        "const ${TM_FILENAME_BASE} = {",
         "\t/** @description */",
@@ -75,8 +77,95 @@
       ],
       "description": "Create Enum with export"
   },
+  "Create_React_Object_Component": {
+      "prefix": "cReactComp_lgd",
+      "scope": "javascript",
+      "body": [
+        "import React from 'react';",
+        "import Proptypes from 'prop-types';",
+        "import { createReactComponent } from '@mavega/react';",
+        "",
+        "/**",
+        "* @description ",
+        "* @type {${TM_FILENAME_BASE}Type}",
+        "* @extends {React.Component<${TM_FILENAME_BASE}Props, ${TM_FILENAME_BASE}State>}",
+        "*/",
+        "const ${TM_FILENAME_BASE} = {",
+          "\t/**",
+          "\t* @description Initialize an instance of ${TM_FILENAME_BASE}.",
+          "\t* Setup state and props for React.",
+          "\t* @param {${TM_FILENAME_BASE}Props} props",
+          "\t* @returns {${TM_FILENAME_BASE}Type}",
+          "\t*/",
+          "\tcreate(props) {",
+            "\t\tthis.state = {",
+            "\t\t",
+            "\t\t};",
+          "\t},",
+          "",
+          "\trender() {",
+            "\t\treturn (",
+            "\t\t\t",
+            "\t\t);",
+          "\t}",
+        "}",
+        "",
+        "${TM_FILENAME_BASE}.defaultProps = {",
+          "",
+        "};",
+        "",
+        "${TM_FILENAME_BASE}.propTypes = {",
+          "",
+        "};",
+        "",
+        "export default createReactComponent(${TM_FILENAME_BASE});"
+      ],
+      "description": "Create React Object Component"
+  },
+  "Create_React_Object_Pure": {
+      "prefix": "cReactPure_lgd",
+      "scope": "javascript",
+      "body": [
+        "import React from 'react';",
+        "import Proptypes from 'prop-types';",
+        "import { createReactPure } from '@mavega/react';",
+        "",
+        "/**",
+        "* @description ",
+        "* @type {${TM_FILENAME_BASE}Type}",
+        "* @extends {React.Component<${TM_FILENAME_BASE}Props, ${TM_FILENAME_BASE}State>}",
+        "*/",
+        "const ${TM_FILENAME_BASE} = {",
+          "\t/**",
+          "\t* @description Initialize an instance of ${TM_FILENAME_BASE}.",
+          "\t* Setup state and props for React.",
+          "\t* @param {${TM_FILENAME_BASE}Props} props",
+          "\t* @returns {${TM_FILENAME_BASE}Type}",
+          "\t*/",
+          "\tcreate(props) {",
+          "\t},",
+          "",
+          "\trender() {",
+            "\t\treturn (",
+            "\t\t\t",
+            "\t\t);",
+          "\t}",
+        "}",
+        "",
+        "${TM_FILENAME_BASE}.defaultProps = {",
+        "",
+        "};",
+        "",
+        "${TM_FILENAME_BASE}.propTypes = {",
+        "",
+        "};",
+        "",
+        "export default createReactPure(${TM_FILENAME_BASE});"
+      ],
+      "description": "Create React PureComponent"
+  },
   "Create_React_Class": {
-      "prefix": "crc_lgd",
+      "prefix": "cReactClass_lgd",
       "scope": "javascript",
       "body": [
         "import React from 'react';",
@@ -112,7 +201,7 @@
       "description": "Create React Class"
   },
   "Create_Next_Page": {
-      "prefix": "crnc_lgd",
+      "prefix": "cReactNext_lgd",
       "scope": "javascript",
       "body": [
         "import React from 'react';",
@@ -152,16 +241,18 @@
       "description": "Create React/Next Class"
   },
   "Create_Error": {
-    "prefix": "cerr_lgd",
+    "prefix": "cError_lgd",
     "scope": "javascript",
     "body": [
-      "const Oloo = require('@learngamedevelopment/oloo');",
+      "const Oloo = require('@mavega/oloo');",
       "",
       "/**",
       "* @description",
       "* @type {${TM_FILENAME_BASE}Type}",
       "*/",
      "const ${TM_FILENAME_BASE} = {",
+        "\tdisplayName: ${TM_FILENAME_BASE},",
+        "",
         "\t/**",
         "\t* @description Initialize an instance of ${TM_FILENAME_BASE}.",
         "\t* @param {string} message the message that will be displayed with error.",
@@ -189,7 +280,7 @@
     "description": "Create Error"
   },
   "Create_Functional_Component": {
-    "prefix": "funcCom_lgd",
+    "prefix": "cFuncComp_lgd",
     "scope": "javascript",
     "description": "Create a Functional React Component",
     "body": [
